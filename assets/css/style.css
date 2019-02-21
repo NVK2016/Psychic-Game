@@ -1,0 +1,12 @@
+/* Setting Background color */
+#psyGame { 
+
+    background: linear-gradient(0deg, rgba(242, 39, 39, 0.66), rgba(255, 252, 230, 1));
+    height:auto; 
+}
+
+/* Shadow effect to game name */
+h1{
+    text-shadow: 1px 12px 6px #FF2BF8;
+    text-align: center; 
+}
