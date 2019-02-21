@@ -36,7 +36,7 @@ document.onkeyup = function(event) {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     console.log('computerGuess ' + computerGuess);
 
-    //collecting all the player guesses in array 
+    //collecting all the player guesses in array IN CASE OF INVALID OR NULL VALUE IT WONT ADD TO THE ARRAY LIST 
     if ( userGuess !== null ) { 
     playersChoice.push(userGuess); } 
 
@@ -44,11 +44,11 @@ document.onkeyup = function(event) {
     // if ( noOfGuessLeft !== 0 ){
 
     guessLeftText.textContent = "Guesses Left: " + noOfGuessLeft;
-    // console.log("Guesses Left: " + (noOfGuessLeft ));
+    console.log("Guesses Left: " + (noOfGuessLeft ));
 
    
-    // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
-    
+    // This logic determines the outcome of the game (win/loss), and resetting the array list & guess so far count 
+        //IN CASE IF THE PLAYER ENTERS DATA IN CAPS converting it to lower case to compare values 
         if ((userGuess.toLowerCase() === computerGuess) ) {
             // Count the no. of Wins 
             wins++;
