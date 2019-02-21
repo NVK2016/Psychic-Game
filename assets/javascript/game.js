@@ -49,7 +49,7 @@ document.onkeyup = function(event) {
    
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
     
-        if ((userGuess === computerGuess) ) {
+        if ((userGuess.toLowerCase() === computerGuess) ) {
             // Count the no. of Wins 
             wins++;
             //Resetting the array of guess so far 
