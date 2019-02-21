@@ -6,7 +6,7 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var wins = 0;
 var losses = 0;
 var noOfGuessLeft = 9;
-var guessChoices = [];
+var playersChoice = [];
 
 // Create variables that hold references to the places in the HTML where we want to display things.
 
@@ -16,10 +16,10 @@ var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var userInput = document.getElementById("userInput-text");
 var guessLeftText = document.getElementById("guessLeft-text"); 
-var computerText = document.getElementById("computer-text");  
+// var computerText = document.getElementById("computer-text");  
 
 /// Display the user guesses, and wins/losses.
-userInput.textContent =  "Your Guesses so far: " + guessChoices; 
+userInput.textContent =  "Your Guesses so far: " + playersChoice; 
 winsText.textContent = "Wins: " + wins; 
 lossesText.textContent = "Losses: " + losses; 
 guessLeftText.textContent = "Guesses Left: " + noOfGuessLeft; 
@@ -38,12 +38,10 @@ document.onkeyup = function(event) {
 
     //collecting all the player guesses in array 
     if ( userGuess !== null ) { 
-    guessChoices.push(userGuess); } 
+    playersChoice.push(userGuess); } 
 
     //Main logic of the game 
-    if ( noOfGuessLeft !== 0 ){
-    //Decrese the count of guess 
-    noOfGuessLeft -= 1; 
+    // if ( noOfGuessLeft !== 0 ){
 
     guessLeftText.textContent = "Guesses Left: " + noOfGuessLeft;
     // console.log("Guesses Left: " + (noOfGuessLeft ));
@@ -52,30 +50,32 @@ document.onkeyup = function(event) {
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
     
         if ((userGuess === computerGuess) ) {
+            // Count the no. of Wins 
             wins++;
-            //Move to new round for guess count 
-            noOfGuessLeft = 0; 
-            //Reset values 
-            guessChoices = []; 
+            //Resetting the array of guess so far 
+            playersChoice = []; 
+            //Resetting the value so player can restart the game again 
+            noOfGuessLeft = 9; 
         } else if (noOfGuessLeft === 0 ){
+            // Count the no. of losses 
             losses++;
-            //Reset values 
-            guessChoices = []; 
-        } else {
-  
+            //Resetting the array of guess so far 
+            playersChoice = []; 
+            //Resetting the value so player can restart the game again 
+            noOfGuessLeft = 9; 
+        } 
+        else {
+            //Decrese the count of guesses 
+            noOfGuessLeft -= 1;
         }
-    }
+    // }
 
         /// Display the user guesses, and wins/losses with updated values.
-        userInput.textContent =  "Your Guesses so far: " + guessChoices; 
+        userInput.textContent =  "Your Guesses so far: " + playersChoice; 
         winsText.textContent = "Wins: " + wins; 
         lossesText.textContent = "Losses: " + losses; 
         guessLeftText.textContent = "Guesses Left: " + noOfGuessLeft; 
-        computerText.textContent = "Computer Guesses so far: " + computerGuess; 
-        
-        //Reset the game again 
-        if(noOfGuessLeft === 0 ) { 
-            noOfGuessLeft = 9; 
-        }
+        // computerText.textContent = "Computer Guesses so far: " + computerGuess; 
+
     
 };

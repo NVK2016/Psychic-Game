@@ -1,12 +1,24 @@
 /* Setting Background color */
-#psyGame { 
+body { 
 
-    background: linear-gradient(0deg, rgba(242, 39, 39, 0.66), rgba(255, 252, 230, 1));
-    height:auto; 
+    /* width: 800px; */
+    margin: 0 auto;
+    background-image: url("../images/crystall-ball-2.png");
+    color: white;
+    font-size: 22px; 
+    text-shadow: 1px 12px 12px #48FF2B;
 }
 
 /* Shadow effect to game name */
-h1{
+.gameHeading {
     text-shadow: 1px 12px 6px #FF2BF8;
     text-align: center; 
+    font-size: 33px;
+    padding : 20px;
+    margin: 10px; 
+    
+}
+
+p {
+    margin: 25px; 
 }
