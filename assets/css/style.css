@@ -7,6 +7,7 @@ body {
     color: white;
     font-size: 22px; 
     text-shadow: 1px 12px 12px #48FF2B;
+    font-family: 'Special Elite', cursive;
 }
 
 /* Shadow effect to game name */
@@ -16,7 +17,7 @@ body {
     font-size: 33px;
     padding : 20px;
     margin: 10px; 
-    
+    font-family: 'Monoton', cursive;
 }
 
 p {
