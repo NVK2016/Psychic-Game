@@ -15,7 +15,9 @@
 Once the player exhausts his/her chances then its reset again. 
 
 ### Click the below Link to play the game
-<a href=" https://nvk2016.github.io/Psychic-Game/">Word Psyhic Game</a>
+<a href="https://nvk2016.github.io/Psychic-Game/">Word Psyhic Game</a>
+<br/> 
+https://nvk2016.github.io/Psychic-Game/
 
 ## Built With: 
 <hr />
