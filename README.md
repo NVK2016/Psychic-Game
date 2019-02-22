@@ -14,7 +14,7 @@
 * The player has <strong> <em> 9 chances </em> </strong>in each round to guess the right answer. 
 Once the player exhausts his/her chances then its reset again. 
 
-### Link to the game
+### Click the below Link to play the game
 <a href=" https://nvk2016.github.io/Psychic-Game/">Word Psyhic Game</a>
 
 ## Built With: 
