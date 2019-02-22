@@ -1,25 +1,28 @@
 /* Setting Background color */
 body { 
 
-    /* width: 800px; */
-    margin: 0 auto;
-    background-image: url("../images/crystall-ball-2.png");
-    color: white;
+    width: 980px;
+    /* margin: 0 auto; */
+    background-image: url("../images/crystall-ball-1.jpg");
+    color: whitesmoke;
     font-size: 22px; 
-    text-shadow: 1px 12px 12px #48FF2B;
+    text-shadow: 1px 5px 5px #48FF2B;
     font-family: 'Special Elite', cursive;
 }
 
 /* Shadow effect to game name */
 .gameHeading {
     text-shadow: 1px 12px 6px #FF2BF8;
+    color: silver;
     text-align: center; 
-    font-size: 33px;
+    font-size: 40px;
     padding : 20px;
-    margin: 10px; 
+    margin: 20px 0 0 40px; 
     font-family: 'Monoton', cursive;
 }
 
 p {
-    margin: 25px; 
+    padding: 5px;
+    margin: 10px; 
+    /* position: fixed; */
 }
