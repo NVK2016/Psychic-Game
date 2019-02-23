@@ -28,3 +28,7 @@ https://nvk2016.github.io/Psychic-Game/ -->
 
 ### Snapshot of the game: 
 ![Word Psyhic](https://github.com/NVK2016/Psychic-Game/blob/master/Pshyic-Game-Screenshot.png?raw=true)
+
+### CSS Animation 
+* Add swing effect to game name using animate.css external file. 
+* Display img when the Player wins the game else the img is hidden. The pic too has css animation. 
