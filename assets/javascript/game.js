@@ -17,6 +17,8 @@ var lossesText = document.getElementById("losses-text");
 var userInput = document.getElementById("userInput-text");
 var guessLeftText = document.getElementById("guessLeft-text"); 
 // var computerText = document.getElementById("computer-text");  
+//In case if the player wins hsow image 
+var img = document.getElementById("winImage");
 
 /// Display the user guesses, and wins/losses.
 userInput.textContent =  "Your Guesses so far: " + playersChoice; 
@@ -24,10 +26,10 @@ winsText.textContent = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses; 
 guessLeftText.textContent = "Guesses Left: " + noOfGuessLeft; 
 
+
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
- 
-        
+
     // Determines which key was pressed.
     var userGuess = event.key;
     console.log('userGuess ' + userGuess);
@@ -56,6 +58,8 @@ document.onkeyup = function(event) {
             playersChoice = []; 
             //Resetting the value so player can restart the game again 
             noOfGuessLeft = 9; 
+            //Display image if the player wins 
+            img.style.display = "block";
         } else if (noOfGuessLeft === 0 ){
             // Count the no. of losses 
             losses++;
@@ -63,13 +67,14 @@ document.onkeyup = function(event) {
             playersChoice = []; 
             //Resetting the value so player can restart the game again 
             noOfGuessLeft = 9; 
+            img.style.display = "none";
         } 
         else {
             //Decrese the count of guesses 
             noOfGuessLeft -= 1;
+            img.style.display = "none";
         }
-    // }
-
+    
         /// Display the user guesses, and wins/losses with updated values.
         userInput.textContent =  "Your Guesses so far: " + playersChoice; 
         winsText.textContent = "Wins: " + wins; 
