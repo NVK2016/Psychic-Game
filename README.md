@@ -11,20 +11,19 @@
 
 * &nbsp; &nbsp; When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
 
-* The player has <strong> <em> 9 chances </em> </strong>in each round to guess the right answer. 
+* The player has <strong> <em style='color:red; '> 9 chances </em> </strong>in each round to guess the right answer. 
 Once the player exhausts his/her chances then its reset again. 
 
-### Click the below Link to play the game
+### Game Link click below: 
 <a href="https://nvk2016.github.io/Psychic-Game/">Word Psyhic Game</a>
-<!--<br/> 
-https://nvk2016.github.io/Psychic-Game/ -->
 
 ## Built With: 
 <hr />
 
 *  Javascript -- Game Logic Code
 *  HTML  -- Show the game output on browser 
-*  CSS -- display effects of the game 
+*  CSS -- custom display effects of the game 
+*  Animate.css - by Daniel Eden
 
 ### Snapshot of the game: 
 ![Word Psyhic](https://github.com/NVK2016/Psychic-Game/blob/master/Pshyic-Game-Screenshot.png?raw=true)
